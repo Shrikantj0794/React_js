@@ -1,4 +1,5 @@
 import './App.css';
+// import About from './compoenent/About';
 import Navbar from './compoenent/Navbar';
 import Form from './compoenent/Form';
 function App() {
@@ -9,6 +10,7 @@ function App() {
       {/* <Navbar/> */}
       <div className="container my-3" >
       <Form heading ="Enter the Text"/>
+      {/* <About/> theme change */}
       </div>
     </>
   );

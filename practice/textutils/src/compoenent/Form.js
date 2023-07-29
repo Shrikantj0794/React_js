@@ -19,6 +19,7 @@ export default function Form(props) {
     let lowertext =text.toLowerCase();
     setText(lowertext)
   }
+ 
     return (
     <div>
         <h3>{props.heading}</h3>
@@ -26,7 +27,7 @@ export default function Form(props) {
             <textarea className="form-control" value={text} onChange={handleonChange} id="myForm" rows="8"></textarea>
             <button className='btn btn-primary mx-2' onClick={ handleUpClick}>convert to UpperCase</button>
             <button className='btn btn-primary mx-2' onClick={ changelowercase}>convert to LowerCase</button> 
-            {/* Call multiple functions onClick ReactJS */}
+             {/* Call multiple functions onClick ReactJS */}
           </div>
         <div className="container mb-3">
           words {text.split(" ").length} and character {text.length}
