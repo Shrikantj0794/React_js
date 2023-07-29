@@ -19,6 +19,11 @@ export default function Form(props) {
     let lowertext =text.toLowerCase();
     setText(lowertext)
   }
+  const CopyText = ()=>{
+    var text = document.getElementById("myForm");
+    text.select();
+    navigator.clipboard.writeText(text.value)
+  }
  
     return (
     <div>
@@ -27,6 +32,7 @@ export default function Form(props) {
             <textarea className="form-control" value={text} onChange={handleonChange} id="myForm" rows="8"></textarea>
             <button className='btn btn-primary mx-2' onClick={ handleUpClick}>convert to UpperCase</button>
             <button className='btn btn-primary mx-2' onClick={ changelowercase}>convert to LowerCase</button> 
+            <button className='btn btn-primary mx-2' onClick={ CopyText}>Copy Text</button> 
              {/* Call multiple functions onClick ReactJS */}
           </div>
         <div className="container mb-3">
